@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATERIALIZE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      
+      </head>
+
+<body>
+   
+  <main>
+<div class="container">
+          <section>
+              <div style="text-align: center;">
+<p>My Materialize Web Page</p>
+
+              </div>
+
+          </section>
+
+            <section>
+                    <div class="container-md">
+                        <a href="index.html">Home </a>
+                        <a href="index-materialize.html">Materialize</a>
+                        <a href="index-bootstrap.html">Bootstrap</a>
+                    </div>
+            </section>
+  <hr>
+  <section>
+    <div class="row">
+      <div class="col m8 l6 s12">
+        <div>
+            <h3>{{data.user.fullName}}</h3>
+        </div>
+    </div>
+      <div class="col m8 l6 s12">
+          <img src="{{data.user.photo2}}" alt="Your Image" class="circle responsive-img" width="200px">
+      </div>
+  </section>
+  <hr>
+  <section>
+    <div class="row">
+      <div class="col m8 l6 s12">
+          <img src="{{data.city.photo2}}" width="80%"
+              alt="Your Image" class="responsive-img">
+          <figcaption class="figure-caption text-right">Santorini in Greece.</figcaption>
+      </div>
+      <div class="col m8 l6 s12">
+          <h2>Which City?</h2>
+          <div class="border-top">
+              <p> {{data.city.description}}</p>
+          </div>
+      </div>
+    
+  </section>
+
+<hr>
+<section>
+  <div class="row">
+    <div class="col m12 l12 s12">
+        
+            <div class="container-md">
+                <p class="m12 l12 s12">
+                <h2>{{data.foreignLanguage.heading}}</h2>
+                </p>
+                <div class="border-top">
+
+                    <p>{{data.foreignLanguage.description}}</p>
+                </div>
+
+
+                <div class="container-md">
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th scope="col">Number</th>
+                              <th scope="col">French</th>
+                              <th scope="col">English</th>
+                          </tr>
+                      </thead>
+                      {{#each data.foreignLanguage.phrases}}
+                      <tbody>
+                       
+                          <tr>
+                              <th scope="row">{{SN}}</th>
+                              <td>{{englishPhrase}}</td>
+                              <td>{{foreignLanguage}}</td>
+                          </tr> 
+                      </tbody>
+                       {{/each}}
+                  </table>
+
+              </div>
+      </div>
+  </div>
+  </div>
+</section>
+<hr>
+        <section>
+          <div>
+            <p class="md-3">
+              <h2>Favourite subjects</h2>
+              </p>
+          </div>
+
+          
+            <div class="row">
+             <div class="col l12 s12 m6">
+              {{#each data.favouriteSubjects}}
+              <div class="col m8 l4 s12"><p><strong>{{name}}</strong></p>
+                <div class="row">
+                  <div class="col m8 l7 s12">{{description}}</div>
+                  <div class="col m8 l5 s12"><img src="{{photo}}" width="80%"></div>
+                </div>
+              </div>
+              {{/each}}
+            </div>
+
+             </div>
+
+        </section>
+
+
+</div>
+  </main>
+   
+     
+        <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+   
+</body>
+
+</html>
+

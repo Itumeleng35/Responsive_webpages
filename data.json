@@ -1,0 +1,53 @@
+{
+    "user": {
+        "fullName": "Itumeleng Maanela",
+        "photo1": "mebootstrap.png",
+        "photo2": "memat.png"
+        
+    },
+    "city": {
+        "name": "Santorini",
+        "photo1": "Santorini-HD-Wallpaper-1080p.png",
+        "photo2": "citymat.png",
+        "description": "Santorini is one of the Cyclades islands in the Aegean Sea.Unfortunately there was a volcanic eruption in the 16th century BC, that shaped its rugged landscape.I would like to visit a city called Santorini that is in Greece. Moreover, it is one of the most beautiful places in the world , it has luxury hotels , sun kissed beaches , historical places and Mediterranean cuisine."
+    },
+    "foreignLanguage": {
+        "language": "French",
+        "heading": "Foreign Language",
+        "description": "I chose French as it is an intriguing language that is spoken in France. Additionally, the language is known for cooking, theatre, visual arts and dancing.",
+        "phrases": [
+            {
+                "englishPhrase": "It is a beautiful day.",
+                "SN":"1",
+                "foreignLanguage": "C'est une belle journée."
+            },
+            {
+                "englishPhrase": "Football is the best sport in the world.",
+                "SN":"2",
+                "foreignLanguage": "Le foot est le meilleur sport du monde."
+            },
+            {
+                "englishPhrase": "Listening to music is an escape from reality.",
+                "SN":"3",
+                "foreignLanguage": "Écouter de la musique est une évasion de la réalité."
+            }
+        ]
+    },
+    "favouriteSubjects": [
+        {
+            "name": "Business Intelligence",
+            "description": "It is about how businesses use internal data , analyse the data , provide it to executives to make informed business decisions.Additionally, it creates and offers recommendations that are suitable for a company and is important to achieve business goals.",
+            "photo":"businessintelligence.png"
+        },
+        {
+            "name": "Web and Intranet Management",
+            "description": "This module explained in detail the importance of having an online presence to attract and retain customers.  Furthermore, companies utilise social media platforms such as Instagram, TikTok and Facebook to market their products and services.",
+            "photo": "webim.png"
+        },
+        {
+            "name": "Strategic Information Management",
+            "description": "It is the process of collecting and analysing data and using it to run business operations.In addition, It can also help companies identify opportunities to improve operations and have a positive impact on profits through data usage analysis.",
+            "photo": "sim.png"
+        }
+    ]
+}
